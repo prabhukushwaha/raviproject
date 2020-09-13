@@ -1,0 +1,36 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" controllerName="modi.controller.Add">
+	<Page title="View 2" showNavButton="true" navButtonPress="onBack">
+		<content>
+			<form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="__form0">
+		        <form:content>
+		            <core:Title text="Product Data" id="__title0"/>
+		            <Label text="Product Id"></Label>
+		            <Input value="{local>/productData/ProductId}"></Input>
+		            <Label text="Product Name"></Label>
+		            <Input value="{local>/productData/Name}"></Input>
+		            <Label text="Description"></Label>
+		            <Input value="{local>/productData/Description}"></Input>
+		            <Label text="Price"></Label>
+		            <Input value="{local>/productData/Price}" type="Number"></Input>
+		            <Label text="Currency Code"></Label>
+		            <Select selectedKey="{local>/productData/CurrencyCode}">
+		            	<items>
+		            		<core:Item key="EUR" text="EUR"></core:Item>
+		            		<core:Item key="USD" text="USD"></core:Item>
+		            		<core:Item key="INR" text="INR"></core:Item>
+		            	</items>
+		            </Select>
+		        </form:content>
+		    </form:SimpleForm>	
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button text="Save" type="Accept" press="onSave"></Button>
+				<Button text="FM Call" press="onFMCall"></Button>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

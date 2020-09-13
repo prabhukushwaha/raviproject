@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" 
+	xmlns:anubhav="modi.controls"
+	xmlns:form="sap.ui.layout.form">
+	<form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="__form0">
+        <core:Title id="__title0" text="More Data"/>
+
+<Label id="__label0" text="Description"/>
+
+<Text id="__text44" text="{name}"/>
+
+<Label id="__label1" text="Type Code"/>
+
+<Text id="__text45" text="{TYPE_CODE}"/>
+
+<Label id="__label2" text="Category"/>
+
+<Text id="__text46" text="{CATEGORY}"/></form:SimpleForm>	
+</core:FragmentDefinition>

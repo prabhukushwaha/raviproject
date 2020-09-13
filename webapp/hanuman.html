@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+		
+     
+         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+		<script id="sap-ui-bootstrap"
+	       src="/resources/sap-ui-core.js"
+	       
+	          data-sap-ui-libs="sap.m, sap.ui.layout"
+	         data-sap-ui-theme="sap_bluecrystal"
+	         data-sap-ui-xx-bindingSyntax="complex"
+	          data-sap-ui-resourceroots='{ "modi" : "./" }
+	         '></script>
+		 
+		 <script>
+		//	var oView = new sap.ui.view("idAppView",{
+		//		viewName: "modi.view.App",
+		//		type    : "XML"
+		//	});
+			
+			
+	
+			var oCompContainer = new sap.ui.core.ComponentContainer({
+				name: "modi"
+			});
+			
+			oCompContainer.placeAt("content");
+	
+		
+		 </script>
+		 
+	</head>
+	
+	
+	<body class="sapUiBody">
+		<div id ="content"></div>
+	</body>
+</html>
